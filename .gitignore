@@ -1,0 +1,2 @@
+# Don't keep copies of all the undo files
+undo/*
