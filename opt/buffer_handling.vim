@@ -5,6 +5,7 @@ function! CloseAll()
     bufdo q
 endfunction
 
+command! WQ call CloseAll()
 nnoremap <expr> <C-Q> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 

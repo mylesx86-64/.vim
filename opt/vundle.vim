@@ -29,7 +29,7 @@ filetype plugin indent on
     autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
     " auto open on `vim ./dir_name`
-    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | wincmd p | exe 'cd '.argv()[0] | endif
     
     " Toggle nerdtree with control-t
     map <C-t> :NERDTreeToggle<CR>
