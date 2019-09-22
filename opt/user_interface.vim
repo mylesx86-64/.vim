@@ -12,7 +12,6 @@ set number
 command! SN set number
 command! SNN set nonumber
 
-
 " Enable mouse for scrolling and resizing
 set mouse=a
 

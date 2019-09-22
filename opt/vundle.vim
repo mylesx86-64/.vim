@@ -10,8 +10,9 @@ call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
 
     Plugin 'nerdtree'
-    Plugin 'smali'
-    Plugin 'powerline', {'rtp': 'powerline/bindings/vim'}
+    Plugin 'smali', {'rtp': '.vim/bundle/'}
+    Plugin 'powerline'
+    "Plugin 'vim-dispatch', {'git': 'https://github.com/tpope/vim-dispatch.git'}
 
 call vundle#end()
 filetype plugin indent on
@@ -31,5 +32,6 @@ filetype plugin indent on
     " auto open on `vim ./dir_name`
     autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
     
+    " Toggle nerdtree with control-t
     map <C-t> :NERDTreeToggle<CR>
 

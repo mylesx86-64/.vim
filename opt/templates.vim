@@ -1,5 +1,5 @@
 
-function _BufNewFile()
+function! _BufNewFile()
     au!
     " read in template files
     autocmd BufNewFile *.* silent! execute '0r $HOME/.vim/templates/skeleton.'.expand("<afile>:e")
