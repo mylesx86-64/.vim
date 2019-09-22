@@ -2,9 +2,13 @@
 " `:read ~/.vim/templates/skeleton.sh`
 " ^ add the bash skeleton to the current file
 
+" Could also use this loop, but decided against it so I can
+"   have more control over files that need to be sourced in
+"   a specific order
+" for f in split(glob('~/.vim/opt/*.vim') '\n')
+"   exe 'source' f
+" endfor
 source $HOME/.vim/opt/vundle.vim
-
-
 source $HOME/.vim/opt/templates.vim
 source $HOME/.vim/opt/buffer_handling.vim
 source $HOME/.vim/opt/indent.vim
