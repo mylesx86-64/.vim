@@ -8,9 +8,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " --- Load Plugins --- "
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
-
     Plugin 'nerdtree'
-    Plugin 'smali', {'rtp': '.vim/bundle/'}
+    Plugin 'mylesx86-64/vim-smali'
     Plugin 'powerline'
     "Plugin 'vim-dispatch', {'git': 'https://github.com/tpope/vim-dispatch.git'}
 
